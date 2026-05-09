@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run *)",
+      "Bash(cuda-gdb -batch -c /tmp/sglang_cuda_coredumps/cuda_coredump_devgpu040.lco3.facebook.com.3183207.1777404662 -ex \"info cuda exceptions\" -ex \"info cuda kernels\" -ex \"info cuda threads\")",
+      "Bash(/usr/local/cuda/bin/cuda-gdb -batch -c /tmp/sglang_cuda_coredumps/cuda_coredump_devgpu040.lco3.facebook.com.3183207.1777404662 -ex \"info cuda exceptions\" -ex \"info cuda kernels\" -ex \"info cuda threads\")",
+      "Bash(/usr/local/cuda/bin/cuda-gdb --version)",
+      "Bash(/usr/local/cuda-12.8/bin/cuda-gdb --version)",
+      "Bash(/usr/local/cuda/bin/cuda-gdb -batch -ex \"target cudacore /tmp/sglang_cuda_coredumps/cuda_coredump_devgpu040.lco3.facebook.com.3183207.1777404662\" -ex \"info cuda exceptions\" -ex \"info cuda kernels\" -ex \"info cuda threads\")",
+      "Bash(/usr/local/cuda/bin/cuda-gdb -batch -ex \"target cudacore /tmp/sglang_cuda_coredumps/cuda_coredump_devgpu040.lco3.facebook.com.3183207.1777404662\" -ex \"bt\" -ex \"info registers\")",
+      "Bash(uv pip *)"
+    ]
+  }
+}

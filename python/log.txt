@@ -1,0 +1,757 @@
+Uninstalled 1 package in 2ms
+Installed 1 package in 12ms
+[2026-04-29 13:16:55] --enable-nan-detection is deprecated. Use SGLANG_SPEC_NAN_DETECTION=1 and SGLANG_SPEC_OOB_DETECTION=1 instead.
+[2026-04-29 13:16:56] Attention backend not specified. Use flashinfer backend by default.
+[2026-04-29 13:16:56] Overlap scheduler is disabled when spec v2 is off or using unsupported speculative algorithm. You can set env SGLANG_ENABLE_SPEC_V2=True to enable the experimental overlap scheduler. 
+[2026-04-29 13:16:56] server_args=ServerArgs(model_path='meta-llama/Llama-2-7b-chat-hf', tokenizer_path='meta-llama/Llama-2-7b-chat-hf', tokenizer_mode='auto', tokenizer_worker_num=1, skip_tokenizer_init=False, load_format='auto', model_loader_extra_config='{}', trust_remote_code=False, context_length=None, is_embedding=False, enable_multimodal=None, revision=None, model_impl='auto', host='127.0.0.1', port=11000, fastapi_root_path='', grpc_mode=False, skip_server_warmup=False, warmups=None, nccl_port=None, checkpoint_engine_wait_weights_before_ready=False, ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_keyfile_password=None, enable_ssl_refresh=False, enable_http2=False, dtype='auto', quantization=None, quantization_param_path=None, kv_cache_dtype='auto', enable_fp32_lm_head=False, modelopt_quant=None, modelopt_checkpoint_restore_path=None, modelopt_checkpoint_save_path=None, modelopt_export_path=None, quantize_and_serve=False, rl_quant_profile=None, mem_fraction_static=0.964, max_running_requests=8, max_queued_requests=None, max_total_tokens=None, chunked_prefill_size=128, enable_dynamic_chunking=False, max_prefill_tokens=16384, prefill_max_requests=None, schedule_policy='fcfs', enable_priority_scheduling=False, disable_priority_preemption=False, default_priority_value=None, abort_on_priority_when_disabled=False, schedule_low_priority_values_first=False, priority_scheduling_preemption_threshold=10, schedule_conservativeness=1.0, page_size=1, swa_full_tokens_ratio=0.8, disable_hybrid_swa_memory=False, radix_eviction_policy='lru', enable_prefill_delayer=False, prefill_delayer_max_delay_passes=30, prefill_delayer_token_usage_low_watermark=None, prefill_delayer_forward_passes_buckets=None, prefill_delayer_wait_seconds_buckets=None, device='cuda', tp_size=1, pp_size=1, pp_max_micro_batch_size=None, pp_async_batch_depth=0, stream_interval=1, batch_notify_size=16, stream_response_default_include_usage=False, incremental_streaming_output=False, enable_streaming_session=False, random_seed=238832858, constrained_json_whitespace_pattern=None, constrained_json_disable_any_whitespace=False, watchdog_timeout=300, soft_watchdog_timeout=None, dist_timeout=None, download_dir=None, model_checksum=None, base_gpu_id=0, gpu_id_step=1, sleep_on_idle=False, use_ray=False, custom_sigquit_handler=None, log_level='info', log_level_http=None, log_requests=False, log_requests_level=2, log_requests_format='text', log_requests_target=None, uvicorn_access_log_exclude_prefixes=[], crash_dump_folder=None, show_time_cost=False, enable_metrics=False, grpc_http_sidecar_port=None, enable_mfu_metrics=False, enable_metrics_for_all_schedulers=False, tokenizer_metrics_custom_labels_header='x-custom-labels', tokenizer_metrics_allowed_custom_labels=None, extra_metric_labels=None, bucket_time_to_first_token=None, bucket_inter_token_latency=None, bucket_e2e_request_latency=None, prompt_tokens_buckets=None, generation_tokens_buckets=None, gc_warning_threshold_secs=0.0, decode_log_interval=40, enable_request_time_stats_logging=False, kv_events_config=None, enable_trace=False, otlp_traces_endpoint='localhost:4317', export_metrics_to_file=False, export_metrics_to_file_dir=None, api_key=None, admin_api_key=None, served_model_name='meta-llama/Llama-2-7b-chat-hf', weight_version='default', chat_template=None, hf_chat_template_name=None, completion_template=None, file_storage_path='sglang_storage', enable_cache_report=False, reasoning_parser=None, strip_thinking_cache=False, tool_call_parser=None, tool_server=None, sampling_defaults='model', dp_size=1, load_balance_method='round_robin', attn_cp_size=1, moe_dp_size=1, dist_init_addr=None, nnodes=1, node_rank=0, json_model_override_args='{}', preferred_sampling_params=None, enable_lora=None, enable_lora_overlap_loading=None, max_lora_rank=None, lora_target_modules=None, lora_paths=None, max_loaded_loras=None, max_loras_per_batch=8, lora_eviction_policy='lru', lora_backend='csgmv', max_lora_chunk_size=16, experts_shared_outer_loras=None, lora_use_virtual_experts=False, lora_strict_loading=False, attention_backend='flashinfer', decode_attention_backend=None, prefill_attention_backend=None, sampling_backend='flashinfer', grammar_backend='xgrammar', mm_attention_backend=None, fp8_gemm_runner_backend='auto', fp4_gemm_runner_backend='auto', nsa_prefill_backend=None, nsa_decode_backend=None, disable_flashinfer_autotune=False, mamba_backend='triton', speculative_algorithm='EAGLE', speculative_draft_model_path='lmsys/sglang-EAGLE-llama2-chat-7B', speculative_draft_model_revision='main', speculative_draft_load_format=None, speculative_num_steps=5, speculative_eagle_topk=8, speculative_num_draft_tokens=64, speculative_dflash_block_size=None, speculative_dflash_draft_window_size=None, speculative_accept_threshold_single=1.0, speculative_accept_threshold_acc=1.0, speculative_token_map=None, speculative_attention_mode='prefill', speculative_draft_attention_backend=None, speculative_moe_runner_backend='auto', speculative_moe_a2a_backend=None, speculative_draft_model_quantization=None, speculative_adaptive=False, speculative_adaptive_config=None, speculative_ngram_min_bfs_breadth=1, speculative_ngram_max_bfs_breadth=10, speculative_ngram_match_type='BFS', speculative_ngram_max_trie_depth=18, speculative_ngram_capacity=10000000, speculative_ngram_external_corpus_path=None, speculative_ngram_external_sam_budget=0, speculative_ngram_external_corpus_max_tokens=10000000, enable_multi_layer_eagle=False, ep_size=1, moe_a2a_backend='none', moe_runner_backend='auto', record_nolora_graph=True, flashinfer_mxfp4_moe_precision='default', enable_flashinfer_allreduce_fusion=False, enforce_disable_flashinfer_allreduce_fusion=False, enable_aiter_allreduce_fusion=False, deepep_mode='auto', ep_num_redundant_experts=0, ep_dispatch_algorithm=None, init_expert_location='trivial', enable_eplb=False, eplb_algorithm='auto', eplb_rebalance_num_iterations=1000, eplb_rebalance_layers_per_chunk=None, eplb_min_rebalancing_utilization_threshold=1.0, expert_distribution_recorder_mode=None, expert_distribution_recorder_buffer_size=1000, enable_expert_distribution_metrics=False, deepep_config=None, moe_dense_tp_size=None, elastic_ep_backend=None, enable_elastic_expert_backup=False, mooncake_ib_device=None, max_mamba_cache_size=None, mamba_ssm_dtype=None, mamba_full_memory_ratio=0.9, mamba_scheduler_strategy='no_buffer', mamba_track_interval=256, linear_attn_backend='triton', linear_attn_decode_backend=None, linear_attn_prefill_backend=None, enable_hierarchical_cache=False, hicache_ratio=2.0, hicache_size=0, hicache_write_policy='write_through', hicache_io_backend='kernel', hicache_mem_layout='layer_first', hicache_storage_backend=None, hicache_storage_prefetch_policy='best_effort', hicache_storage_backend_extra_config=None, enable_hisparse=False, hisparse_config=None, enable_lmcache=False, kt_weight_path=None, kt_method='AMXINT4', kt_cpuinfer=None, kt_threadpool_count=2, kt_num_gpu_experts=None, kt_max_deferred_experts_per_token=None, dllm_algorithm=None, dllm_algorithm_config=None, cpu_offload_gb=0, offload_group_size=-1, offload_num_in_group=1, offload_prefetch_step=1, offload_mode='cpu', enable_mis=False, disable_radix_cache=False, cuda_graph_max_bs=512, cuda_graph_bs=[1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 40, 44, 48, 52, 56, 60, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], disable_cuda_graph=False, disable_cuda_graph_padding=False, enable_breakable_cuda_graph=False, enable_profile_cuda_graph=False, enable_cudagraph_gc=False, debug_cuda_graph=False, enable_layerwise_nvtx_marker=False, enable_nccl_nvls=False, enable_symm_mem=False, disable_flashinfer_cutlass_moe_fp4_allgather=False, enable_tokenizer_batch_encode=False, disable_tokenizer_batch_decode=False, disable_outlines_disk_cache=False, disable_custom_all_reduce=False, enable_mscclpp=False, enable_torch_symm_mem=False, pre_warm_nccl=False, disable_overlap_schedule=True, enable_mixed_chunk=False, enable_dp_attention=False, enable_dp_attention_local_control_broadcast=False, enable_dp_lm_head=False, enable_two_batch_overlap=False, enable_single_batch_overlap=False, tbo_token_distribution_threshold=0.48, enable_torch_compile=False, disable_piecewise_cuda_graph=True, enforce_piecewise_cuda_graph=False, enable_torch_compile_debug_mode=False, torch_compile_max_bs=32, piecewise_cuda_graph_max_tokens=128, piecewise_cuda_graph_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128], piecewise_cuda_graph_compiler='eager', torchao_config='', enable_nan_detection=True, enable_p2p_check=False, triton_attention_reduce_in_fp32=False, triton_attention_num_kv_splits=8, triton_attention_split_tile_size=None, num_continuous_decode_steps=1, delete_ckpt_after_loading=False, enable_memory_saver=False, enable_weights_cpu_backup=False, enable_draft_weights_cpu_backup=False, allow_auto_truncate=False, enable_custom_logit_processor=False, flashinfer_mla_disable_ragged=False, disable_shared_experts_fusion=False, enforce_shared_experts_fusion=False, disable_chunked_prefix_cache=False, disable_fast_image_processor=False, keep_mm_feature_on_device=False, enable_return_hidden_states=False, enable_return_routed_experts=False, scheduler_recv_interval=1, numa_node=None, enable_deterministic_inference=False, rl_on_policy_target=None, enable_attn_tp_input_scattered=False, gc_threshold=None, enable_nsa_prefill_context_parallel=False, nsa_prefill_cp_mode='round-robin-split', enable_fused_qk_norm_rope=False, enable_precise_embedding_interpolation=False, enable_fused_moe_sum_all_reduce=False, enable_prefill_context_parallel=False, prefill_cp_mode='in-seq-split', enable_dynamic_batch_tokenizer=False, dynamic_batch_tokenizer_batch_size=32, dynamic_batch_tokenizer_batch_timeout=0.002, debug_tensor_dump_output_folder=None, debug_tensor_dump_layers=None, debug_tensor_dump_input_file=None, debug_tensor_dump_inject=False, disaggregation_mode='null', disaggregation_transfer_backend='mooncake', disaggregation_bootstrap_port=8998, disaggregation_ib_device=None, disaggregation_decode_enable_offload_kvcache=False, num_reserved_decode_tokens=512, disaggregation_decode_polling_interval=1, encoder_only=False, language_only=False, encoder_transfer_backend='zmq_to_scheduler', encoder_urls=[], enable_adaptive_dispatch_to_encoder=False, custom_weight_loader=[], weight_loader_disable_mmap=False, weight_loader_prefetch_checkpoints=False, weight_loader_prefetch_num_threads=4, remote_instance_weight_loader_seed_instance_ip=None, remote_instance_weight_loader_seed_instance_service_port=None, remote_instance_weight_loader_send_weights_group_ports=None, remote_instance_weight_loader_backend='nccl', remote_instance_weight_loader_start_seed_via_transfer_engine=False, engine_info_bootstrap_port=6789, modelexpress_config=None, enable_pdmux=False, pdmux_config_path=None, sm_group_num=8, enable_broadcast_mm_inputs_process=False, enable_prefix_mm_cache=False, mm_enable_dp_encoder=False, mm_process_config={}, limit_mm_data_per_request=None, enable_mm_global_cache=False, decrypted_config_file=None, decrypted_draft_config_file=None, forward_hooks=None, msprobe_dump_config=None)
+[2026-04-29 13:16:56] Multiple NUMA nodes found for GPU 0: [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]. Using the first one.
+Injecting CUDA coredump env vars (pid=2201188)
+[2026-04-29 13:16:57] Restoring add_bos_token=True for meta-llama/Llama-2-7b-chat-hf (was False after v5 loading)
+[2026-04-29 13:16:57] Using default HuggingFace chat template with detected content format: string
+[2026-04-29 13:17:04] Restoring add_bos_token=True for meta-llama/Llama-2-7b-chat-hf (was False after v5 loading)
+[2026-04-29 13:17:04] Restoring add_bos_token=True for meta-llama/Llama-2-7b-chat-hf (was False after v5 loading)
+[2026-04-29 13:17:05] Failed to load generation config for lmsys/sglang-EAGLE-llama2-chat-7B: lmsys/sglang-EAGLE-llama2-chat-7B does not appear to have a file named generation_config.json. Checkout 'https://huggingface.co/lmsys/sglang-EAGLE-llama2-chat-7B/tree/main' for available files.. Proceeding without generation config.
+[2026-04-29 13:17:05] Init torch distributed begin.
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[2026-04-29 13:17:05] Init torch distributed ends. elapsed=0.20 s, mem usage=0.10 GB
+[2026-04-29 13:17:06] Load weight begin. avail mem=275.76 GB
+[2026-04-29 13:17:06] Found local HF snapshot for meta-llama/Llama-2-7b-chat-hf at /home/cctry/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-chat-hf/snapshots/f5db02db724555f92da89c216ac04704f23d4590; skipping download.
+Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]Multi-thread loading shards:  50% Completed | 1/2 [00:01<00:01,  1.02s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.50it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.39it/s]
+[2026-04-29 13:17:07] Load weight end. elapsed=1.80 s, type=LlamaForCausalLM, avail mem=263.19 GB, mem usage=12.57 GB.
+[2026-04-29 13:17:07] Using KV cache dtype: torch.float16
+[2026-04-29 13:17:08] Restoring add_bos_token=True for meta-llama/Llama-2-7b-chat-hf (was False after v5 loading)
+[2026-04-29 13:17:08] SPECULATIVE_MOE_RUNNER_BACKEND is not initialized, using auto backend
+[2026-04-29 13:17:08] SPECULATIVE_MOE_A2A_BACKEND is not initialized, using none backend
+[2026-04-29 13:17:08] Init torch distributed begin.
+[2026-04-29 13:17:08] Init torch distributed ends. elapsed=0.00 s, mem usage=0.00 GB
+[2026-04-29 13:17:08] Load weight begin. avail mem=263.19 GB
+[2026-04-29 13:17:08] Using model weights format ['*.bin']
+Multi-thread loading pt checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Multi-thread loading pt checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  3.33it/s]Multi-thread loading pt checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  3.33it/s]
+[2026-04-29 13:17:09] Load weight end. elapsed=0.61 s, type=LlamaForCausalLMEagle, avail mem=262.26 GB, mem usage=0.93 GB.
+[2026-04-29 13:17:09] Using KV cache dtype: torch.float16
+[2026-04-29 13:17:09] Restoring add_bos_token=True for meta-llama/Llama-2-7b-chat-hf (was False after v5 loading)
+[2026-04-29 13:17:10] KV Cache is allocated. #tokens: 501108, K size: 122.34 GB, V size: 122.34 GB
+[2026-04-29 13:17:10] Memory pool end. avail mem=17.51 GB
+[2026-04-29 13:17:10] KV Cache is allocated. #tokens: 501108, K size: 3.82 GB, V size: 3.82 GB
+[2026-04-29 13:17:10] Memory pool end. avail mem=9.86 GB
+[2026-04-29 13:17:10] Capture cuda graph begin. This can take up to several minutes. avail mem=9.87 GB
+[2026-04-29 13:17:10] Capture cuda graph bs [1, 2, 3, 4, 5, 6, 7, 8]
+  0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=8 avail_mem=9.79 GB):   0%|          | 0/8 [00:00<?, ?it/s]2026-04-29 13:17:10,917 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-29 13:17:10] Unexpected error during package walk: cutlass.cute.experimental
+Capturing batches (bs=8 avail_mem=9.79 GB):  12%|█▎        | 1/8 [00:00<00:05,  1.18it/s]Capturing batches (bs=7 avail_mem=9.65 GB):  12%|█▎        | 1/8 [00:00<00:05,  1.18it/s]Capturing batches (bs=6 avail_mem=9.65 GB):  12%|█▎        | 1/8 [00:00<00:05,  1.18it/s]Capturing batches (bs=6 avail_mem=9.65 GB):  38%|███▊      | 3/8 [00:01<00:01,  3.61it/s]Capturing batches (bs=5 avail_mem=9.65 GB):  38%|███▊      | 3/8 [00:01<00:01,  3.61it/s]Capturing batches (bs=4 avail_mem=9.63 GB):  38%|███▊      | 3/8 [00:01<00:01,  3.61it/s]Capturing batches (bs=4 avail_mem=9.63 GB):  62%|██████▎   | 5/8 [00:01<00:00,  5.78it/s]Capturing batches (bs=3 avail_mem=9.63 GB):  62%|██████▎   | 5/8 [00:01<00:00,  5.78it/s]Capturing batches (bs=2 avail_mem=9.61 GB):  62%|██████▎   | 5/8 [00:01<00:00,  5.78it/s]Capturing batches (bs=2 avail_mem=9.61 GB):  88%|████████▊ | 7/8 [00:01<00:00,  7.55it/s]Capturing batches (bs=1 avail_mem=9.60 GB):  88%|████████▊ | 7/8 [00:01<00:00,  7.55it/s]Capturing batches (bs=1 avail_mem=9.60 GB): 100%|██████████| 8/8 [00:01<00:00,  5.80it/s]
+[2026-04-29 13:17:12] Capture cuda graph end. Time elapsed: 1.94 s. mem usage=0.29 GB. avail mem=9.58 GB.
+[2026-04-29 13:17:12] Disable piecewise CUDA graph because --disable-piecewise-cuda-graph is set
+[2026-04-29 13:17:12] Capture draft cuda graph begin. This can take up to several minutes. avail mem=9.46 GB
+  0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=8 avail_mem=9.46 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=8 avail_mem=9.46 GB):  12%|█▎        | 1/8 [00:03<00:25,  3.59s/it]Capturing batches (bs=7 avail_mem=9.36 GB):  12%|█▎        | 1/8 [00:03<00:25,  3.59s/it]Capturing batches (bs=7 avail_mem=9.36 GB):  25%|██▌       | 2/8 [00:04<00:10,  1.74s/it]Capturing batches (bs=6 avail_mem=9.32 GB):  25%|██▌       | 2/8 [00:04<00:10,  1.74s/it]Capturing batches (bs=5 avail_mem=9.28 GB):  25%|██▌       | 2/8 [00:04<00:10,  1.74s/it]Capturing batches (bs=4 avail_mem=9.24 GB):  25%|██▌       | 2/8 [00:04<00:10,  1.74s/it]Capturing batches (bs=4 avail_mem=9.24 GB):  62%|██████▎   | 5/8 [00:04<00:01,  1.92it/s]Capturing batches (bs=3 avail_mem=9.20 GB):  62%|██████▎   | 5/8 [00:04<00:01,  1.92it/s]Capturing batches (bs=2 avail_mem=9.16 GB):  62%|██████▎   | 5/8 [00:04<00:01,  1.92it/s]Capturing batches (bs=2 avail_mem=9.16 GB):  88%|████████▊ | 7/8 [00:04<00:00,  2.88it/s]Capturing batches (bs=1 avail_mem=9.12 GB):  88%|████████▊ | 7/8 [00:04<00:00,  2.88it/s]Capturing batches (bs=1 avail_mem=9.12 GB): 100%|██████████| 8/8 [00:06<00:00,  1.18it/s]
+[2026-04-29 13:17:19] Capture draft cuda graph end. Time elapsed: 7.37 s. mem usage=0.38 GB. avail mem=9.08 GB.
+[2026-04-29 13:17:19] Capture draft extend cuda graph begin. This can take up to several minutes. avail mem=9.08 GB
+  0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=8 avail_mem=9.07 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=7 avail_mem=9.03 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=6 avail_mem=9.00 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=5 avail_mem=9.00 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=4 avail_mem=8.98 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=3 avail_mem=8.98 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=2 avail_mem=8.97 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=1 avail_mem=8.97 GB):   0%|          | 0/8 [00:00<?, ?it/s]Capturing batches (bs=1 avail_mem=8.97 GB): 100%|██████████| 8/8 [00:00<00:00, 67.46it/s]Capturing batches (bs=1 avail_mem=8.97 GB): 100%|██████████| 8/8 [00:00<00:00, 67.35it/s]
+[2026-04-29 13:17:20] Capture draft extend cuda graph end. Time elapsed: 0.67 s. mem usage=0.13 GB. avail mem=8.95 GB.
+[2026-04-29 13:17:20] max_total_num_tokens=501108, chunked_prefill_size=128, max_prefill_tokens=16384, max_running_requests=8, context_len=4096, available_gpu_mem=8.95 GB
+[2026-04-29 13:17:20] INFO:     Started server process [2201188]
+[2026-04-29 13:17:20] INFO:     Waiting for application startup.
+[2026-04-29 13:17:20] Using default chat sampling params from model generation config: {'temperature': 0.6, 'top_p': 0.9}
+[2026-04-29 13:17:20] INFO:     Application startup complete.
+[2026-04-29 13:17:20] INFO:     Uvicorn running on http://127.0.0.1:11000 (Press CTRL+C to quit)
+[2026-04-29 13:17:21] INFO:     127.0.0.1:47268 - "GET /model_info HTTP/1.1" 200 OK
+[2026-04-29 13:17:21] Prefill batch, #new-seq: 1, #new-token: 7, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 0.40
+[2026-04-29 13:17:21] INFO:     127.0.0.1:47278 - "POST /generate HTTP/1.1" 200 OK
+[2026-04-29 13:17:21] The server is fired up and ready to roll!
+[2026-04-29 13:17:43] Endpoint '/get_model_info' is deprecated and will be removed in a future version. Please use '/model_info' instead.
+[2026-04-29 13:17:43] INFO:     127.0.0.1:62176 - "GET /get_model_info HTTP/1.1" 200 OK
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 749, cuda graph: False, input throughput (token/s): 5.97
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 621, cuda graph: False, input throughput (token/s): 3080.00
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 493, cuda graph: False, input throughput (token/s): 3604.47
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 365, cuda graph: False, input throughput (token/s): 3690.56
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 237, cuda graph: False, input throughput (token/s): 3668.58
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 109, cuda graph: False, input throughput (token/s): 3696.72
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 109, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 2831.16
+[2026-04-29 13:17:43] INFO:     127.0.0.1:62192 - "POST /generate HTTP/1.1" 200 OK
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 1, #new-token: 79, #cached-token: 876, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 1626.42
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 3, #new-token: 128, #cached-token: 2634, token usage: 0.00, #running-req: 1, #queue-req: 26, #pending-token: 24790, cuda graph: False, input throughput (token/s): 3076.54
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 2, #new-token: 128, #cached-token: 878, token usage: 0.00, #running-req: 3, #queue-req: 42, #pending-token: 39961, cuda graph: False, input throughput (token/s): 3158.83
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 3, #new-token: 128, #cached-token: 1756, token usage: 0.00, #running-req: 4, #queue-req: 76, #pending-token: 72013, cuda graph: False, input throughput (token/s): 3087.84
+[2026-04-29 13:17:43] Prefill batch, #new-seq: 2, #new-token: 94, #cached-token: 878, token usage: 0.00, #running-req: 6, #queue-req: 115, #pending-token: 109080, cuda graph: False, input throughput (token/s): 2000.38
+[13:17:43.820000] coredump: Starting GPU coredump generation
+[13:17:43.824096] coredump: SM 1/152 has finished state collection
+[13:17:43.827470] coredump: SM 2/152 has finished state collection
+[13:17:43.830803] coredump: SM 3/152 has finished state collection
+[13:17:43.834183] coredump: SM 4/152 has finished state collection
+[13:17:43.837644] coredump: SM 5/152 has finished state collection
+[13:17:43.841092] coredump: SM 6/152 has finished state collection
+[13:17:43.844537] coredump: SM 7/152 has finished state collection
+[13:17:43.848146] coredump: SM 8/152 has finished state collection
+[13:17:43.851699] coredump: SM 9/152 has finished state collection
+[13:17:43.855159] coredump: SM 10/152 has finished state collection
+[13:17:43.858667] coredump: SM 11/152 has finished state collection
+[13:17:43.862102] coredump: SM 12/152 has finished state collection
+[13:17:43.865518] coredump: SM 13/152 has finished state collection
+[13:17:43.868842] coredump: SM 14/152 has finished state collection
+[13:17:43.872168] coredump: SM 15/152 has finished state collection
+[13:17:43.875520] coredump: SM 16/152 has finished state collection
+[13:17:43.878885] coredump: SM 17/152 has finished state collection
+[13:17:43.882279] coredump: SM 18/152 has finished state collection
+[13:17:43.885745] coredump: SM 19/152 has finished state collection
+[13:17:43.889338] coredump: SM 20/152 has finished state collection
+[13:17:43.892812] coredump: SM 21/152 has finished state collection
+[13:17:43.896295] coredump: SM 22/152 has finished state collection
+[13:17:43.899696] coredump: SM 23/152 has finished state collection
+[13:17:43.903183] coredump: SM 24/152 has finished state collection
+[13:17:43.906663] coredump: SM 25/152 has finished state collection
+[13:17:43.910069] coredump: SM 26/152 has finished state collection
+[13:17:43.913414] coredump: SM 27/152 has finished state collection
+[13:17:43.916716] coredump: SM 28/152 has finished state collection
+[13:17:43.920094] coredump: SM 29/152 has finished state collection
+[13:17:43.923411] coredump: SM 30/152 has finished state collection
+[13:17:43.926898] coredump: SM 31/152 has finished state collection
+[13:17:43.930369] coredump: SM 32/152 has finished state collection
+[13:17:43.933830] coredump: SM 33/152 has finished state collection
+[13:17:43.937205] coredump: SM 34/152 has finished state collection
+[13:17:43.940589] coredump: SM 35/152 has finished state collection
+[13:17:43.944013] coredump: SM 36/152 has finished state collection
+[13:17:43.947528] coredump: SM 37/152 has finished state collection
+[13:17:43.950942] coredump: SM 38/152 has finished state collection
+[13:17:43.954294] coredump: SM 39/152 has finished state collection
+[13:17:43.957645] coredump: SM 40/152 has finished state collection
+[13:17:43.960982] coredump: SM 41/152 has finished state collection
+[13:17:43.964324] coredump: SM 42/152 has finished state collection
+[13:17:43.967769] coredump: SM 43/152 has finished state collection
+[13:17:43.971161] coredump: SM 44/152 has finished state collection
+[13:17:43.974543] coredump: SM 45/152 has finished state collection
+[13:17:43.977999] coredump: SM 46/152 has finished state collection
+[13:17:43.981439] coredump: SM 47/152 has finished state collection
+[13:17:43.984811] coredump: SM 48/152 has finished state collection
+[13:17:43.988196] coredump: SM 49/152 has finished state collection
+[13:17:43.989935] coredump: Detected an exception of type CUDBG_EXCEPTION_WARP_ASSERT (12)
+[13:17:43.989944] coredump:   - Device: 0
+[13:17:43.989946] coredump:   - SM: 49
+[13:17:43.989947] coredump:   - Warp: 4
+[13:17:43.989949] coredump:   - PC 0xffb07fe1cc80
+[13:17:43.989952] coredump: Stack trace (lane masks: active 0xFFFFFFFF, valid 0xFFFFFFFF):
+[13:17:43.989964] coredump:   #0	0xffb07fe1cc80	_ZN2at6native24vectorized_gather_kernelILi16ElEEvPcS2_PT0_illllb
+[13:17:43.991576] coredump: SM 50/152 has finished state collection
+[13:17:43.995010] coredump: SM 51/152 has finished state collection
+[13:17:43.998474] coredump: SM 52/152 has finished state collection
+[13:17:44.001857] coredump: SM 53/152 has finished state collection
+[13:17:44.005200] coredump: SM 54/152 has finished state collection
+[13:17:44.008640] coredump: SM 55/152 has finished state collection
+[13:17:44.012014] coredump: SM 56/152 has finished state collection
+[13:17:44.015353] coredump: SM 57/152 has finished state collection
+[13:17:44.018778] coredump: SM 58/152 has finished state collection
+[13:17:44.022230] coredump: SM 59/152 has finished state collection
+[13:17:44.025706] coredump: SM 60/152 has finished state collection
+[13:17:44.029055] coredump: SM 61/152 has finished state collection
+[13:17:44.032475] coredump: SM 62/152 has finished state collection
+[13:17:44.035909] coredump: SM 63/152 has finished state collection
+[13:17:44.039328] coredump: SM 64/152 has finished state collection
+[13:17:44.042813] coredump: SM 65/152 has finished state collection
+[13:17:44.046229] coredump: SM 66/152 has finished state collection
+[13:17:44.049644] coredump: SM 67/152 has finished state collection
+[13:17:44.053056] coredump: SM 68/152 has finished state collection
+[13:17:44.056479] coredump: SM 69/152 has finished state collection
+[13:17:44.059999] coredump: SM 70/152 has finished state collection
+[13:17:44.063468] coredump: SM 71/152 has finished state collection
+[13:17:44.066974] coredump: SM 72/152 has finished state collection
+[13:17:44.070440] coredump: SM 73/152 has finished state collection
+[13:17:44.074381] coredump: SM 74/152 has finished state collection
+[13:17:44.077853] coredump: SM 75/152 has finished state collection
+[13:17:44.081183] coredump: SM 76/152 has finished state collection
+[13:17:44.084666] coredump: SM 77/152 has finished state collection
+[13:17:44.088253] coredump: SM 78/152 has finished state collection
+[13:17:44.091675] coredump: SM 79/152 has finished state collection
+[13:17:44.095145] coredump: SM 80/152 has finished state collection
+[13:17:44.098562] coredump: SM 81/152 has finished state collection
+[13:17:44.101979] coredump: SM 82/152 has finished state collection
+[13:17:44.105470] coredump: SM 83/152 has finished state collection
+[13:17:44.108787] coredump: SM 84/152 has finished state collection
+[13:17:44.112110] coredump: SM 85/152 has finished state collection
+[13:17:44.115428] coredump: SM 86/152 has finished state collection
+[13:17:44.118769] coredump: SM 87/152 has finished state collection
+[13:17:44.122154] coredump: SM 88/152 has finished state collection
+[13:17:44.125633] coredump: SM 89/152 has finished state collection
+[13:17:44.129005] coredump: SM 90/152 has finished state collection
+[13:17:44.132408] coredump: SM 91/152 has finished state collection
+[13:17:44.135813] coredump: SM 92/152 has finished state collection
+[13:17:44.139225] coredump: SM 93/152 has finished state collection
+[13:17:44.142792] coredump: SM 94/152 has finished state collection
+[13:17:44.146231] coredump: SM 95/152 has finished state collection
+[13:17:44.149565] coredump: SM 96/152 has finished state collection
+[13:17:44.152856] coredump: SM 97/152 has finished state collection
+[13:17:44.156190] coredump: SM 98/152 has finished state collection
+[13:17:44.159524] coredump: SM 99/152 has finished state collection
+[13:17:44.162794] coredump: SM 100/152 has finished state collection
+[13:17:44.166128] coredump: SM 101/152 has finished state collection
+[13:17:44.169466] coredump: SM 102/152 has finished state collection
+[13:17:44.172810] coredump: SM 103/152 has finished state collection
+[13:17:44.176633] coredump: SM 104/152 has finished state collection
+[13:17:44.179980] coredump: SM 105/152 has finished state collection
+[13:17:44.183393] coredump: SM 106/152 has finished state collection
+[13:17:44.186817] coredump: SM 107/152 has finished state collection
+[13:17:44.190172] coredump: SM 108/152 has finished state collection
+[13:17:44.193564] coredump: SM 109/152 has finished state collection
+[13:17:44.196898] coredump: SM 110/152 has finished state collection
+[13:17:44.200296] coredump: SM 111/152 has finished state collection
+[13:17:44.203613] coredump: SM 112/152 has finished state collection
+[13:17:44.207085] coredump: SM 113/152 has finished state collection
+[13:17:44.210491] coredump: SM 114/152 has finished state collection
+[13:17:44.213974] coredump: SM 115/152 has finished state collection
+[13:17:44.217365] coredump: SM 116/152 has finished state collection
+[13:17:44.220731] coredump: SM 117/152 has finished state collection
+[13:17:44.224058] coredump: SM 118/152 has finished state collection
+[13:17:44.227411] coredump: SM 119/152 has finished state collection
+[13:17:44.230761] coredump: SM 120/152 has finished state collection
+[13:17:44.234100] coredump: SM 121/152 has finished state collection
+[13:17:44.237410] coredump: SM 122/152 has finished state collection
+[13:17:44.240896] coredump: SM 123/152 has finished state collection
+[13:17:44.244247] coredump: SM 124/152 has finished state collection
+[13:17:44.244258] coredump: SM 125/152 has finished state collection
+[13:17:44.244261] coredump: SM 126/152 has finished state collection
+[13:17:44.244264] coredump: SM 127/152 has finished state collection
+[13:17:44.244266] coredump: SM 128/152 has finished state collection
+[13:17:44.244268] coredump: SM 129/152 has finished state collection
+[13:17:44.244270] coredump: SM 130/152 has finished state collection
+[13:17:44.244272] coredump: SM 131/152 has finished state collection
+[13:17:44.244274] coredump: SM 132/152 has finished state collection
+[13:17:44.244275] coredump: SM 133/152 has finished state collection
+[13:17:44.244277] coredump: SM 134/152 has finished state collection
+[13:17:44.244279] coredump: SM 135/152 has finished state collection
+[13:17:44.244281] coredump: SM 136/152 has finished state collection
+[13:17:44.244282] coredump: SM 137/152 has finished state collection
+[13:17:44.244284] coredump: SM 138/152 has finished state collection
+[13:17:44.244286] coredump: SM 139/152 has finished state collection
+[13:17:44.244288] coredump: SM 140/152 has finished state collection
+[13:17:44.244290] coredump: SM 141/152 has finished state collection
+[13:17:44.244291] coredump: SM 142/152 has finished state collection
+[13:17:44.244293] coredump: SM 143/152 has finished state collection
+[13:17:44.244296] coredump: SM 144/152 has finished state collection
+[13:17:44.244298] coredump: SM 145/152 has finished state collection
+[13:17:44.244299] coredump: SM 146/152 has finished state collection
+[13:17:44.244301] coredump: SM 147/152 has finished state collection
+[13:17:44.244303] coredump: SM 148/152 has finished state collection
+[13:17:44.247648] coredump: SM 149/152 has finished state collection
+[13:17:44.250997] coredump: SM 150/152 has finished state collection
+[13:17:44.254410] coredump: SM 151/152 has finished state collection
+[13:17:44.257842] coredump: SM 152/152 has finished state collection
+[13:17:44.257894] coredump: Device 1/4 has finished state collection
+[13:17:44.257905] coredump: SM 1/152 is not used by any context
+[13:17:44.257907] coredump: SM 2/152 is not used by any context
+[13:17:44.257909] coredump: SM 3/152 is not used by any context
+[13:17:44.257911] coredump: SM 4/152 is not used by any context
+[13:17:44.257912] coredump: SM 5/152 is not used by any context
+[13:17:44.257914] coredump: SM 6/152 is not used by any context
+[13:17:44.257915] coredump: SM 7/152 is not used by any context
+[13:17:44.257917] coredump: SM 8/152 is not used by any context
+[13:17:44.257918] coredump: SM 9/152 is not used by any context
+[13:17:44.257919] coredump: SM 10/152 is not used by any context
+[13:17:44.257921] coredump: SM 11/152 is not used by any context
+[13:17:44.257923] coredump: SM 12/152 is not used by any context
+[13:17:44.257924] coredump: SM 13/152 is not used by any context
+[13:17:44.257925] coredump: SM 14/152 is not used by any context
+[13:17:44.257927] coredump: SM 15/152 is not used by any context
+[13:17:44.257928] coredump: SM 16/152 is not used by any context
+[13:17:44.257930] coredump: SM 17/152 is not used by any context
+[13:17:44.257931] coredump: SM 18/152 is not used by any context
+[13:17:44.257933] coredump: SM 19/152 is not used by any context
+[13:17:44.257934] coredump: SM 20/152 is not used by any context
+[13:17:44.257936] coredump: SM 21/152 is not used by any context
+[13:17:44.257937] coredump: SM 22/152 is not used by any context
+[13:17:44.257939] coredump: SM 23/152 is not used by any context
+[13:17:44.257940] coredump: SM 24/152 is not used by any context
+[13:17:44.257942] coredump: SM 25/152 is not used by any context
+[13:17:44.257943] coredump: SM 26/152 is not used by any context
+[13:17:44.257945] coredump: SM 27/152 is not used by any context
+[13:17:44.257946] coredump: SM 28/152 is not used by any context
+[13:17:44.257947] coredump: SM 29/152 is not used by any context
+[13:17:44.257949] coredump: SM 30/152 is not used by any context
+[13:17:44.257951] coredump: SM 31/152 is not used by any context
+[13:17:44.257952] coredump: SM 32/152 is not used by any context
+[13:17:44.257953] coredump: SM 33/152 is not used by any context
+[13:17:44.257955] coredump: SM 34/152 is not used by any context
+[13:17:44.257956] coredump: SM 35/152 is not used by any context
+[13:17:44.257958] coredump: SM 36/152 is not used by any context
+[13:17:44.257960] coredump: SM 37/152 is not used by any context
+[13:17:44.257961] coredump: SM 38/152 is not used by any context
+[13:17:44.257962] coredump: SM 39/152 is not used by any context
+[13:17:44.257964] coredump: SM 40/152 is not used by any context
+[13:17:44.257965] coredump: SM 41/152 is not used by any context
+[13:17:44.257967] coredump: SM 42/152 is not used by any context
+[13:17:44.257968] coredump: SM 43/152 is not used by any context
+[13:17:44.257970] coredump: SM 44/152 is not used by any context
+[13:17:44.257971] coredump: SM 45/152 is not used by any context
+[13:17:44.257972] coredump: SM 46/152 is not used by any context
+[13:17:44.257974] coredump: SM 47/152 is not used by any context
+[13:17:44.257975] coredump: SM 48/152 is not used by any context
+[13:17:44.257977] coredump: SM 49/152 is not used by any context
+[13:17:44.257978] coredump: SM 50/152 is not used by any context
+[13:17:44.257980] coredump: SM 51/152 is not used by any context
+[13:17:44.257981] coredump: SM 52/152 is not used by any context
+[13:17:44.257983] coredump: SM 53/152 is not used by any context
+[13:17:44.257984] coredump: SM 54/152 is not used by any context
+[13:17:44.257986] coredump: SM 55/152 is not used by any context
+[13:17:44.257987] coredump: SM 56/152 is not used by any context
+[13:17:44.257989] coredump: SM 57/152 is not used by any context
+[13:17:44.257990] coredump: SM 58/152 is not used by any context
+[13:17:44.257992] coredump: SM 59/152 is not used by any context
+[13:17:44.257993] coredump: SM 60/152 is not used by any context
+[13:17:44.257995] coredump: SM 61/152 is not used by any context
+[13:17:44.257996] coredump: SM 62/152 is not used by any context
+[13:17:44.257998] coredump: SM 63/152 is not used by any context
+[13:17:44.257999] coredump: SM 64/152 is not used by any context
+[13:17:44.258000] coredump: SM 65/152 is not used by any context
+[13:17:44.258002] coredump: SM 66/152 is not used by any context
+[13:17:44.258003] coredump: SM 67/152 is not used by any context
+[13:17:44.258005] coredump: SM 68/152 is not used by any context
+[13:17:44.258006] coredump: SM 69/152 is not used by any context
+[13:17:44.258007] coredump: SM 70/152 is not used by any context
+[13:17:44.258009] coredump: SM 71/152 is not used by any context
+[13:17:44.258010] coredump: SM 72/152 is not used by any context
+[13:17:44.258012] coredump: SM 73/152 is not used by any context
+[13:17:44.258013] coredump: SM 74/152 is not used by any context
+[13:17:44.258015] coredump: SM 75/152 is not used by any context
+[13:17:44.258016] coredump: SM 76/152 is not used by any context
+[13:17:44.258017] coredump: SM 77/152 is not used by any context
+[13:17:44.258019] coredump: SM 78/152 is not used by any context
+[13:17:44.258021] coredump: SM 79/152 is not used by any context
+[13:17:44.258022] coredump: SM 80/152 is not used by any context
+[13:17:44.258023] coredump: SM 81/152 is not used by any context
+[13:17:44.258025] coredump: SM 82/152 is not used by any context
+[13:17:44.258026] coredump: SM 83/152 is not used by any context
+[13:17:44.258028] coredump: SM 84/152 is not used by any context
+[13:17:44.258029] coredump: SM 85/152 is not used by any context
+[13:17:44.258031] coredump: SM 86/152 is not used by any context
+[13:17:44.258032] coredump: SM 87/152 is not used by any context
+[13:17:44.258034] coredump: SM 88/152 is not used by any context
+[13:17:44.258035] coredump: SM 89/152 is not used by any context
+[13:17:44.258037] coredump: SM 90/152 is not used by any context
+[13:17:44.258038] coredump: SM 91/152 is not used by any context
+[13:17:44.258040] coredump: SM 92/152 is not used by any context
+[13:17:44.258041] coredump: SM 93/152 is not used by any context
+[13:17:44.258042] coredump: SM 94/152 is not used by any context
+[13:17:44.258044] coredump: SM 95/152 is not used by any context
+[13:17:44.258045] coredump: SM 96/152 is not used by any context
+[13:17:44.258047] coredump: SM 97/152 is not used by any context
+[13:17:44.258048] coredump: SM 98/152 is not used by any context
+[13:17:44.258050] coredump: SM 99/152 is not used by any context
+[13:17:44.258051] coredump: SM 100/152 is not used by any context
+[13:17:44.258052] coredump: SM 101/152 is not used by any context
+[13:17:44.258054] coredump: SM 102/152 is not used by any context
+[13:17:44.258055] coredump: SM 103/152 is not used by any context
+[13:17:44.258057] coredump: SM 104/152 is not used by any context
+[13:17:44.258058] coredump: SM 105/152 is not used by any context
+[13:17:44.258060] coredump: SM 106/152 is not used by any context
+[13:17:44.258061] coredump: SM 107/152 is not used by any context
+[13:17:44.258062] coredump: SM 108/152 is not used by any context
+[13:17:44.258064] coredump: SM 109/152 is not used by any context
+[13:17:44.258065] coredump: SM 110/152 is not used by any context
+[13:17:44.258067] coredump: SM 111/152 is not used by any context
+[13:17:44.258068] coredump: SM 112/152 is not used by any context
+[13:17:44.258069] coredump: SM 113/152 is not used by any context
+[13:17:44.258071] coredump: SM 114/152 is not used by any context
+[13:17:44.258072] coredump: SM 115/152 is not used by any context
+[13:17:44.258074] coredump: SM 116/152 is not used by any context
+[13:17:44.258075] coredump: SM 117/152 is not used by any context
+[13:17:44.258077] coredump: SM 118/152 is not used by any context
+[13:17:44.258078] coredump: SM 119/152 is not used by any context
+[13:17:44.258080] coredump: SM 120/152 is not used by any context
+[13:17:44.258081] coredump: SM 121/152 is not used by any context
+[13:17:44.258083] coredump: SM 122/152 is not used by any context
+[13:17:44.258084] coredump: SM 123/152 is not used by any context
+[13:17:44.258086] coredump: SM 124/152 is not used by any context
+[13:17:44.258087] coredump: SM 125/152 is not used by any context
+[13:17:44.258088] coredump: SM 126/152 is not used by any context
+[13:17:44.258090] coredump: SM 127/152 is not used by any context
+[13:17:44.258091] coredump: SM 128/152 is not used by any context
+[13:17:44.258093] coredump: SM 129/152 is not used by any context
+[13:17:44.258094] coredump: SM 130/152 is not used by any context
+[13:17:44.258096] coredump: SM 131/152 is not used by any context
+[13:17:44.258097] coredump: SM 132/152 is not used by any context
+[13:17:44.258099] coredump: SM 133/152 is not used by any context
+[13:17:44.258100] coredump: SM 134/152 is not used by any context
+[13:17:44.258101] coredump: SM 135/152 is not used by any context
+[13:17:44.258103] coredump: SM 136/152 is not used by any context
+[13:17:44.258104] coredump: SM 137/152 is not used by any context
+[13:17:44.258106] coredump: SM 138/152 is not used by any context
+[13:17:44.258107] coredump: SM 139/152 is not used by any context
+[13:17:44.258109] coredump: SM 140/152 is not used by any context
+[13:17:44.258110] coredump: SM 141/152 is not used by any context
+[13:17:44.258111] coredump: SM 142/152 is not used by any context
+[13:17:44.258113] coredump: SM 143/152 is not used by any context
+[13:17:44.258114] coredump: SM 144/152 is not used by any context
+[13:17:44.258116] coredump: SM 145/152 is not used by any context
+[13:17:44.258117] coredump: SM 146/152 is not used by any context
+[13:17:44.258119] coredump: SM 147/152 is not used by any context
+[13:17:44.258120] coredump: SM 148/152 is not used by any context
+[13:17:44.258121] coredump: SM 149/152 is not used by any context
+[13:17:44.258123] coredump: SM 150/152 is not used by any context
+[13:17:44.258124] coredump: SM 151/152 is not used by any context
+[13:17:44.258126] coredump: SM 152/152 is not used by any context
+[13:17:44.258127] coredump: Device 2/4 has finished state collection
+[13:17:44.258140] coredump: SM 1/152 is not used by any context
+[13:17:44.258141] coredump: SM 2/152 is not used by any context
+[13:17:44.258143] coredump: SM 3/152 is not used by any context
+[13:17:44.258144] coredump: SM 4/152 is not used by any context
+[13:17:44.258146] coredump: SM 5/152 is not used by any context
+[13:17:44.258147] coredump: SM 6/152 is not used by any context
+[13:17:44.258148] coredump: SM 7/152 is not used by any context
+[13:17:44.258150] coredump: SM 8/152 is not used by any context
+[13:17:44.258151] coredump: SM 9/152 is not used by any context
+[13:17:44.258153] coredump: SM 10/152 is not used by any context
+[13:17:44.258154] coredump: SM 11/152 is not used by any context
+[13:17:44.258156] coredump: SM 12/152 is not used by any context
+[13:17:44.258157] coredump: SM 13/152 is not used by any context
+[13:17:44.258159] coredump: SM 14/152 is not used by any context
+[13:17:44.258160] coredump: SM 15/152 is not used by any context
+[13:17:44.258162] coredump: SM 16/152 is not used by any context
+[13:17:44.258163] coredump: SM 17/152 is not used by any context
+[13:17:44.258165] coredump: SM 18/152 is not used by any context
+[13:17:44.258166] coredump: SM 19/152 is not used by any context
+[13:17:44.258168] coredump: SM 20/152 is not used by any context
+[13:17:44.258169] coredump: SM 21/152 is not used by any context
+[13:17:44.258171] coredump: SM 22/152 is not used by any context
+[13:17:44.258172] coredump: SM 23/152 is not used by any context
+[13:17:44.258174] coredump: SM 24/152 is not used by any context
+[13:17:44.258175] coredump: SM 25/152 is not used by any context
+[13:17:44.258176] coredump: SM 26/152 is not used by any context
+[13:17:44.258178] coredump: SM 27/152 is not used by any context
+[13:17:44.258179] coredump: SM 28/152 is not used by any context
+[13:17:44.258181] coredump: SM 29/152 is not used by any context
+[13:17:44.258182] coredump: SM 30/152 is not used by any context
+[13:17:44.258184] coredump: SM 31/152 is not used by any context
+[13:17:44.258185] coredump: SM 32/152 is not used by any context
+[13:17:44.258187] coredump: SM 33/152 is not used by any context
+[13:17:44.258188] coredump: SM 34/152 is not used by any context
+[13:17:44.258190] coredump: SM 35/152 is not used by any context
+[13:17:44.258191] coredump: SM 36/152 is not used by any context
+[13:17:44.258193] coredump: SM 37/152 is not used by any context
+[13:17:44.258194] coredump: SM 38/152 is not used by any context
+[13:17:44.258195] coredump: SM 39/152 is not used by any context
+[13:17:44.258197] coredump: SM 40/152 is not used by any context
+[13:17:44.258198] coredump: SM 41/152 is not used by any context
+[13:17:44.258200] coredump: SM 42/152 is not used by any context
+[13:17:44.258201] coredump: SM 43/152 is not used by any context
+[13:17:44.258203] coredump: SM 44/152 is not used by any context
+[13:17:44.258204] coredump: SM 45/152 is not used by any context
+[13:17:44.258205] coredump: SM 46/152 is not used by any context
+[13:17:44.258207] coredump: SM 47/152 is not used by any context
+[13:17:44.258208] coredump: SM 48/152 is not used by any context
+[13:17:44.258210] coredump: SM 49/152 is not used by any context
+[13:17:44.258211] coredump: SM 50/152 is not used by any context
+[13:17:44.258212] coredump: SM 51/152 is not used by any context
+[13:17:44.258214] coredump: SM 52/152 is not used by any context
+[13:17:44.258215] coredump: SM 53/152 is not used by any context
+[13:17:44.258217] coredump: SM 54/152 is not used by any context
+[13:17:44.258218] coredump: SM 55/152 is not used by any context
+[13:17:44.258220] coredump: SM 56/152 is not used by any context
+[13:17:44.258221] coredump: SM 57/152 is not used by any context
+[13:17:44.258223] coredump: SM 58/152 is not used by any context
+[13:17:44.258224] coredump: SM 59/152 is not used by any context
+[13:17:44.258225] coredump: SM 60/152 is not used by any context
+[13:17:44.258227] coredump: SM 61/152 is not used by any context
+[13:17:44.258228] coredump: SM 62/152 is not used by any context
+[13:17:44.258230] coredump: SM 63/152 is not used by any context
+[13:17:44.258231] coredump: SM 64/152 is not used by any context
+[13:17:44.258232] coredump: SM 65/152 is not used by any context
+[13:17:44.258234] coredump: SM 66/152 is not used by any context
+[13:17:44.258235] coredump: SM 67/152 is not used by any context
+[13:17:44.258237] coredump: SM 68/152 is not used by any context
+[13:17:44.258238] coredump: SM 69/152 is not used by any context
+[13:17:44.258240] coredump: SM 70/152 is not used by any context
+[13:17:44.258241] coredump: SM 71/152 is not used by any context
+[13:17:44.258243] coredump: SM 72/152 is not used by any context
+[13:17:44.258244] coredump: SM 73/152 is not used by any context
+[13:17:44.258245] coredump: SM 74/152 is not used by any context
+[13:17:44.258247] coredump: SM 75/152 is not used by any context
+[13:17:44.258248] coredump: SM 76/152 is not used by any context
+[13:17:44.258250] coredump: SM 77/152 is not used by any context
+[13:17:44.258252] coredump: SM 78/152 is not used by any context
+[13:17:44.258253] coredump: SM 79/152 is not used by any context
+[13:17:44.258254] coredump: SM 80/152 is not used by any context
+[13:17:44.258256] coredump: SM 81/152 is not used by any context
+[13:17:44.258257] coredump: SM 82/152 is not used by any context
+[13:17:44.258259] coredump: SM 83/152 is not used by any context
+[13:17:44.258260] coredump: SM 84/152 is not used by any context
+[13:17:44.258262] coredump: SM 85/152 is not used by any context
+[13:17:44.258263] coredump: SM 86/152 is not used by any context
+[13:17:44.258264] coredump: SM 87/152 is not used by any context
+[13:17:44.258266] coredump: SM 88/152 is not used by any context
+[13:17:44.258267] coredump: SM 89/152 is not used by any context
+[13:17:44.258269] coredump: SM 90/152 is not used by any context
+[13:17:44.258270] coredump: SM 91/152 is not used by any context
+[13:17:44.258272] coredump: SM 92/152 is not used by any context
+[13:17:44.258273] coredump: SM 93/152 is not used by any context
+[13:17:44.258274] coredump: SM 94/152 is not used by any context
+[13:17:44.258276] coredump: SM 95/152 is not used by any context
+[13:17:44.258277] coredump: SM 96/152 is not used by any context
+[13:17:44.258279] coredump: SM 97/152 is not used by any context
+[13:17:44.258280] coredump: SM 98/152 is not used by any context
+[13:17:44.258282] coredump: SM 99/152 is not used by any context
+[13:17:44.258283] coredump: SM 100/152 is not used by any context
+[13:17:44.258284] coredump: SM 101/152 is not used by any context
+[13:17:44.258286] coredump: SM 102/152 is not used by any context
+[13:17:44.258287] coredump: SM 103/152 is not used by any context
+[13:17:44.258289] coredump: SM 104/152 is not used by any context
+[13:17:44.258290] coredump: SM 105/152 is not used by any context
+[13:17:44.258292] coredump: SM 106/152 is not used by any context
+[13:17:44.258293] coredump: SM 107/152 is not used by any context
+[13:17:44.258294] coredump: SM 108/152 is not used by any context
+[13:17:44.258296] coredump: SM 109/152 is not used by any context
+[13:17:44.258297] coredump: SM 110/152 is not used by any context
+[13:17:44.258299] coredump: SM 111/152 is not used by any context
+[13:17:44.258300] coredump: SM 112/152 is not used by any context
+[13:17:44.258302] coredump: SM 113/152 is not used by any context
+[13:17:44.258303] coredump: SM 114/152 is not used by any context
+[13:17:44.258304] coredump: SM 115/152 is not used by any context
+[13:17:44.258306] coredump: SM 116/152 is not used by any context
+[13:17:44.258307] coredump: SM 117/152 is not used by any context
+[13:17:44.258309] coredump: SM 118/152 is not used by any context
+[13:17:44.258310] coredump: SM 119/152 is not used by any context
+[13:17:44.258312] coredump: SM 120/152 is not used by any context
+[13:17:44.258313] coredump: SM 121/152 is not used by any context
+[13:17:44.258314] coredump: SM 122/152 is not used by any context
+[13:17:44.258316] coredump: SM 123/152 is not used by any context
+[13:17:44.258317] coredump: SM 124/152 is not used by any context
+[13:17:44.258319] coredump: SM 125/152 is not used by any context
+[13:17:44.258320] coredump: SM 126/152 is not used by any context
+[13:17:44.258322] coredump: SM 127/152 is not used by any context
+[13:17:44.258323] coredump: SM 128/152 is not used by any context
+[13:17:44.258324] coredump: SM 129/152 is not used by any context
+[13:17:44.258326] coredump: SM 130/152 is not used by any context
+[13:17:44.258327] coredump: SM 131/152 is not used by any context
+[13:17:44.258329] coredump: SM 132/152 is not used by any context
+[13:17:44.258330] coredump: SM 133/152 is not used by any context
+[13:17:44.258332] coredump: SM 134/152 is not used by any context
+[13:17:44.258333] coredump: SM 135/152 is not used by any context
+[13:17:44.258335] coredump: SM 136/152 is not used by any context
+[13:17:44.258336] coredump: SM 137/152 is not used by any context
+[13:17:44.258338] coredump: SM 138/152 is not used by any context
+[13:17:44.258339] coredump: SM 139/152 is not used by any context
+[13:17:44.258340] coredump: SM 140/152 is not used by any context
+[13:17:44.258342] coredump: SM 141/152 is not used by any context
+[13:17:44.258343] coredump: SM 142/152 is not used by any context
+[13:17:44.258345] coredump: SM 143/152 is not used by any context
+[13:17:44.258346] coredump: SM 144/152 is not used by any context
+[13:17:44.258348] coredump: SM 145/152 is not used by any context
+[13:17:44.258349] coredump: SM 146/152 is not used by any context
+[13:17:44.258350] coredump: SM 147/152 is not used by any context
+[13:17:44.258352] coredump: SM 148/152 is not used by any context
+[13:17:44.258353] coredump: SM 149/152 is not used by any context
+[13:17:44.258355] coredump: SM 150/152 is not used by any context
+[13:17:44.258356] coredump: SM 151/152 is not used by any context
+[13:17:44.258358] coredump: SM 152/152 is not used by any context
+[13:17:44.258359] coredump: Device 3/4 has finished state collection
+[13:17:44.258361] coredump: SM 1/152 is not used by any context
+[13:17:44.258363] coredump: SM 2/152 is not used by any context
+[13:17:44.258364] coredump: SM 3/152 is not used by any context
+[13:17:44.258366] coredump: SM 4/152 is not used by any context
+[13:17:44.258367] coredump: SM 5/152 is not used by any context
+[13:17:44.258369] coredump: SM 6/152 is not used by any context
+[13:17:44.258370] coredump: SM 7/152 is not used by any context
+[13:17:44.258372] coredump: SM 8/152 is not used by any context
+[13:17:44.258373] coredump: SM 9/152 is not used by any context
+[13:17:44.258374] coredump: SM 10/152 is not used by any context
+[13:17:44.258376] coredump: SM 11/152 is not used by any context
+[13:17:44.258377] coredump: SM 12/152 is not used by any context
+[13:17:44.258379] coredump: SM 13/152 is not used by any context
+[13:17:44.258380] coredump: SM 14/152 is not used by any context
+[13:17:44.258382] coredump: SM 15/152 is not used by any context
+[13:17:44.258383] coredump: SM 16/152 is not used by any context
+[13:17:44.258384] coredump: SM 17/152 is not used by any context
+[13:17:44.258386] coredump: SM 18/152 is not used by any context
+[13:17:44.258387] coredump: SM 19/152 is not used by any context
+[13:17:44.258389] coredump: SM 20/152 is not used by any context
+[13:17:44.258390] coredump: SM 21/152 is not used by any context
+[13:17:44.258392] coredump: SM 22/152 is not used by any context
+[13:17:44.258393] coredump: SM 23/152 is not used by any context
+[13:17:44.258394] coredump: SM 24/152 is not used by any context
+[13:17:44.258396] coredump: SM 25/152 is not used by any context
+[13:17:44.258397] coredump: SM 26/152 is not used by any context
+[13:17:44.258399] coredump: SM 27/152 is not used by any context
+[13:17:44.258400] coredump: SM 28/152 is not used by any context
+[13:17:44.258402] coredump: SM 29/152 is not used by any context
+[13:17:44.258403] coredump: SM 30/152 is not used by any context
+[13:17:44.258404] coredump: SM 31/152 is not used by any context
+[13:17:44.258406] coredump: SM 32/152 is not used by any context
+[13:17:44.258407] coredump: SM 33/152 is not used by any context
+[13:17:44.258409] coredump: SM 34/152 is not used by any context
+[13:17:44.258410] coredump: SM 35/152 is not used by any context
+[13:17:44.258412] coredump: SM 36/152 is not used by any context
+[13:17:44.258413] coredump: SM 37/152 is not used by any context
+[13:17:44.258414] coredump: SM 38/152 is not used by any context
+[13:17:44.258416] coredump: SM 39/152 is not used by any context
+[13:17:44.258417] coredump: SM 40/152 is not used by any context
+[13:17:44.258419] coredump: SM 41/152 is not used by any context
+[13:17:44.258420] coredump: SM 42/152 is not used by any context
+[13:17:44.258452] coredump: SM 43/152 is not used by any context
+[13:17:44.258453] coredump: SM 44/152 is not used by any context
+[13:17:44.258455] coredump: SM 45/152 is not used by any context
+[13:17:44.258456] coredump: SM 46/152 is not used by any context
+[13:17:44.258458] coredump: SM 47/152 is not used by any context
+[13:17:44.258459] coredump: SM 48/152 is not used by any context
+[13:17:44.258461] coredump: SM 49/152 is not used by any context
+[13:17:44.258462] coredump: SM 50/152 is not used by any context
+[13:17:44.258464] coredump: SM 51/152 is not used by any context
+[13:17:44.258466] coredump: SM 52/152 is not used by any context
+[13:17:44.258468] coredump: SM 53/152 is not used by any context
+[13:17:44.258469] coredump: SM 54/152 is not used by any context
+[13:17:44.258471] coredump: SM 55/152 is not used by any context
+[13:17:44.258472] coredump: SM 56/152 is not used by any context
+[13:17:44.258474] coredump: SM 57/152 is not used by any context
+[13:17:44.258475] coredump: SM 58/152 is not used by any context
+[13:17:44.258476] coredump: SM 59/152 is not used by any context
+[13:17:44.258478] coredump: SM 60/152 is not used by any context
+[13:17:44.258479] coredump: SM 61/152 is not used by any context
+[13:17:44.258481] coredump: SM 62/152 is not used by any context
+[13:17:44.258482] coredump: SM 63/152 is not used by any context
+[13:17:44.258484] coredump: SM 64/152 is not used by any context
+[13:17:44.258485] coredump: SM 65/152 is not used by any context
+[13:17:44.258487] coredump: SM 66/152 is not used by any context
+[13:17:44.258488] coredump: SM 67/152 is not used by any context
+[13:17:44.258489] coredump: SM 68/152 is not used by any context
+[13:17:44.258491] coredump: SM 69/152 is not used by any context
+[13:17:44.258492] coredump: SM 70/152 is not used by any context
+[13:17:44.258494] coredump: SM 71/152 is not used by any context
+[13:17:44.258495] coredump: SM 72/152 is not used by any context
+[13:17:44.258497] coredump: SM 73/152 is not used by any context
+[13:17:44.258498] coredump: SM 74/152 is not used by any context
+[13:17:44.258500] coredump: SM 75/152 is not used by any context
+[13:17:44.258501] coredump: SM 76/152 is not used by any context
+[13:17:44.258502] coredump: SM 77/152 is not used by any context
+[13:17:44.258504] coredump: SM 78/152 is not used by any context
+[13:17:44.258505] coredump: SM 79/152 is not used by any context
+[13:17:44.258507] coredump: SM 80/152 is not used by any context
+[13:17:44.258508] coredump: SM 81/152 is not used by any context
+[13:17:44.258510] coredump: SM 82/152 is not used by any context
+[13:17:44.258511] coredump: SM 83/152 is not used by any context
+[13:17:44.258512] coredump: SM 84/152 is not used by any context
+[13:17:44.258514] coredump: SM 85/152 is not used by any context
+[13:17:44.258515] coredump: SM 86/152 is not used by any context
+[13:17:44.258517] coredump: SM 87/152 is not used by any context
+[13:17:44.258518] coredump: SM 88/152 is not used by any context
+[13:17:44.258520] coredump: SM 89/152 is not used by any context
+[13:17:44.258521] coredump: SM 90/152 is not used by any context
+[13:17:44.258523] coredump: SM 91/152 is not used by any context
+[13:17:44.258524] coredump: SM 92/152 is not used by any context
+[13:17:44.258525] coredump: SM 93/152 is not used by any context
+[13:17:44.258527] coredump: SM 94/152 is not used by any context
+[13:17:44.258528] coredump: SM 95/152 is not used by any context
+[13:17:44.258530] coredump: SM 96/152 is not used by any context
+[13:17:44.258531] coredump: SM 97/152 is not used by any context
+[13:17:44.258533] coredump: SM 98/152 is not used by any context
+[13:17:44.258534] coredump: SM 99/152 is not used by any context
+[13:17:44.258536] coredump: SM 100/152 is not used by any context
+[13:17:44.258537] coredump: SM 101/152 is not used by any context
+[13:17:44.258539] coredump: SM 102/152 is not used by any context
+[13:17:44.258540] coredump: SM 103/152 is not used by any context
+[13:17:44.258541] coredump: SM 104/152 is not used by any context
+[13:17:44.258543] coredump: SM 105/152 is not used by any context
+[13:17:44.258554] coredump: SM 106/152 is not used by any context
+[13:17:44.258556] coredump: SM 107/152 is not used by any context
+[13:17:44.258557] coredump: SM 108/152 is not used by any context
+[13:17:44.258559] coredump: SM 109/152 is not used by any context
+[13:17:44.258560] coredump: SM 110/152 is not used by any context
+[13:17:44.258562] coredump: SM 111/152 is not used by any context
+[13:17:44.258563] coredump: SM 112/152 is not used by any context
+[13:17:44.258565] coredump: SM 113/152 is not used by any context
+[13:17:44.258566] coredump: SM 114/152 is not used by any context
+[13:17:44.258568] coredump: SM 115/152 is not used by any context
+[13:17:44.258569] coredump: SM 116/152 is not used by any context
+[13:17:44.258570] coredump: SM 117/152 is not used by any context
+[13:17:44.258572] coredump: SM 118/152 is not used by any context
+[13:17:44.258573] coredump: SM 119/152 is not used by any context
+[13:17:44.258575] coredump: SM 120/152 is not used by any context
+[13:17:44.258576] coredump: SM 121/152 is not used by any context
+[13:17:44.258578] coredump: SM 122/152 is not used by any context
+[13:17:44.258579] coredump: SM 123/152 is not used by any context
+[13:17:44.258581] coredump: SM 124/152 is not used by any context
+[13:17:44.258582] coredump: SM 125/152 is not used by any context
+[13:17:44.258584] coredump: SM 126/152 is not used by any context
+[13:17:44.258585] coredump: SM 127/152 is not used by any context
+[13:17:44.258587] coredump: SM 128/152 is not used by any context
+[13:17:44.258588] coredump: SM 129/152 is not used by any context
+[13:17:44.258589] coredump: SM 130/152 is not used by any context
+[13:17:44.258591] coredump: SM 131/152 is not used by any context
+[13:17:44.258592] coredump: SM 132/152 is not used by any context
+[13:17:44.258594] coredump: SM 133/152 is not used by any context
+[13:17:44.258595] coredump: SM 134/152 is not used by any context
+[13:17:44.258597] coredump: SM 135/152 is not used by any context
+[13:17:44.258598] coredump: SM 136/152 is not used by any context
+[13:17:44.258599] coredump: SM 137/152 is not used by any context
+[13:17:44.258601] coredump: SM 138/152 is not used by any context
+[13:17:44.258602] coredump: SM 139/152 is not used by any context
+[13:17:44.258604] coredump: SM 140/152 is not used by any context
+[13:17:44.258605] coredump: SM 141/152 is not used by any context
+[13:17:44.258607] coredump: SM 142/152 is not used by any context
+[13:17:44.258608] coredump: SM 143/152 is not used by any context
+[13:17:44.258610] coredump: SM 144/152 is not used by any context
+[13:17:44.258611] coredump: SM 145/152 is not used by any context
+[13:17:44.258613] coredump: SM 146/152 is not used by any context
+[13:17:44.258614] coredump: SM 147/152 is not used by any context
+[13:17:44.258616] coredump: SM 148/152 is not used by any context
+[13:17:44.258617] coredump: SM 149/152 is not used by any context
+[13:17:44.258619] coredump: SM 150/152 is not used by any context
+[13:17:44.258620] coredump: SM 151/152 is not used by any context
+[13:17:44.258621] coredump: SM 152/152 is not used by any context
+[13:17:44.258623] coredump: Device 4/4 has finished state collection
+[13:17:44.258840] coredump: Calculating ELF file layout
+[13:17:44.273869] coredump: ELF file layout calculated
+[13:17:44.273885] coredump: Writing ELF file to /tmp/sglang_cuda_coredumps/cuda_coredump_devgpu040.lco3.facebook.com.2204749.1777493818
+[13:17:44.273906] coredump: Current working directory is /home/cctry/sglang/python
+[13:17:44.274113] coredump: Writing out global memory (0 bytes)
+[13:17:44.274119] coredump: Writing out device table
+[13:17:44.307751] coredump: Writing out metadata
+[13:17:44.307773] coredump: Finalizing
+[13:17:44.308935] coredump: Writing done
+[13:17:44.308945] coredump: All done (took 01s)
+Fatal Python error: Aborted
+
+Thread 0x0000ffafcffff180 (most recent call first):
+  File "/home/cctry/sglang/python/sglang/srt/utils/watchdog.py", line 147 in _watchdog_once
+  File "/home/cctry/sglang/python/sglang/srt/utils/watchdog.py", line 127 in _watchdog_thread
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1012 in run
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x0000ffafdbfff180 (most recent call first):
+  File "/home/cctry/sglang/python/.venv/lib/python3.12/site-packages/torch/_inductor/compile_worker/subproc_pool.py", line 73 in _recv_msg
+  File "/home/cctry/sglang/python/.venv/lib/python3.12/site-packages/torch/_inductor/compile_worker/subproc_pool.py", line 228 in _read_thread
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1012 in run
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x0000fff6fbfbf180 (most recent call first):
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 359 in wait
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 655 in wait
+  File "/home/cctry/sglang/python/.venv/lib/python3.12/site-packages/tqdm/_monitor.py", line 60 in run
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x0000fff31ffff180 (most recent call first):
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 359 in wait
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 655 in wait
+  File "/home/cctry/sglang/python/.venv/lib/python3.12/site-packages/tqdm/_monitor.py", line 60 in run
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x0000fffe40f90800 (most recent call first):
+  File "/home/cctry/sglang/python/.venv/lib/python3.12/site-packages/torch/cuda/graphs.py", line 141 in replay
+  File "/home/cctry/sglang/python/sglang/srt/speculative/eagle_draft_cuda_graph_runner.py", line 219 in _replay
+  File "/home/cctry/sglang/python/sglang/srt/speculative/eagle_draft_cuda_graph_runner.py", line 427 in replay
+  File "/home/cctry/sglang/python/sglang/srt/speculative/eagle_worker.py", line 724 in draft
+  File "/home/cctry/sglang/python/sglang/srt/speculative/eagle_worker.py", line 457 in forward_batch_generation
+  File "/home/cctry/sglang/python/sglang/srt/managers/scheduler.py", line 2890 in run_batch
+  File "/home/cctry/sglang/python/sglang/srt/managers/scheduler.py", line 1428 in event_loop_normal
+  File "/home/cctry/sglang/python/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120 in decorate_context
+  File "/home/cctry/sglang/python/sglang/srt/managers/scheduler.py", line 3712 in dispatch_event_loop
+  File "/home/cctry/sglang/python/sglang/srt/managers/scheduler.py", line 1409 in run_event_loop
+  File "/home/cctry/sglang/python/sglang/srt/managers/scheduler.py", line 3840 in run_scheduler_process
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/multiprocessing/process.py", line 108 in run
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/multiprocessing/process.py", line 314 in _bootstrap
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/multiprocessing/spawn.py", line 135 in _main
+  File "/usr/local/fbcode/platform010-aarch64/lib/python3.12/multiprocessing/spawn.py", line 122 in spawn_main
+  File "<string>", line 1 in <module>
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, psutil._psutil_linux, pybase64._pybase64, charset_normalizer.md, charset_normalizer.cd, requests.packages.charset_normalizer.md, requests.packages.chardet.md, requests.packages.charset_normalizer.cd, requests.packages.chardet.cd, torch._C, torch._C._dynamo.autograd_compiler, torch._C._dynamo.eval_frame, torch._C._dynamo.guards, torch._C._dynamo.utils, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, PIL._imaging, PIL._imagingft, av._core, av.logging, av.bytesource, av.buffer, av.audio.format, av.error, av.dictionary, av.container.pyio, av.option, av.descriptor, av.format, av.utils, av.stream, av.container.streams, av.sidedata.encparams, av.sidedata.motionvectors, av.sidedata.sidedata, av.opaque, av.packet, av.container.input, av.container.output, av.container.core, av.codec.context, av.video.format, av.video.reformatter, av.plane, av.video.plane, av.video.frame, av.video.stream, av.codec.hwaccel, av.codec.codec, av.frame, av.audio.layout, av.audio.plane, av.audio.frame, av.audio.stream, av.filter.link, av.filter.context, av.filter.graph, av.filter.filter, av.filter.loudnorm, av.audio.resampler, av.audio.codeccontext, av.audio.fifo, av.bitstream, av.video.codeccontext, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._mt19937, numpy.random._generator, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, cuda.bindings._bindings.cydriver, cuda.bindings.cydriver, cuda.bindings.driver, tvm_ffi.core, markupsafe._speedups, cuda.bindings._bindings.cyruntime_ptds, cuda.bindings._bindings.cyruntime, cuda.bindings.cyruntime, cuda.bindings.runtime, cuda.bindings._bindings.cynvrtc, cuda.bindings.cynvrtc, cuda.bindings.nvrtc, regex._regex, yaml._yaml, _cffi_backend, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._batched_linalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_schur_sqrtm, scipy.linalg._matfuncs_expm, scipy.linalg._linalg_pythran, scipy.linalg.cython_blas, scipy.linalg._decomp_update, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpacklib, scipy.sparse.linalg._propack, scipy.optimize._group_columns, scipy._lib.messagestream, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._slsqplib, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy._lib._uarray._uarray, scipy.special._ufuncs_cxx, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.linalg._decomp_interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.spatial._ckdtree, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._hausdorff, scipy.spatial._distance_wrap, scipy.spatial.transform._rotation_cy, scipy.spatial.transform._rigid_transform_cy, scipy.optimize._direct, multidict._multidict, yarl._quoting_c, propcache._helpers_c, aiohttp._http_writer, aiohttp._http_parser, aiohttp._websocket.mask, aiohttp._websocket.reader_c, frozenlist._frozenlist, setproctitle._setproctitle, zmq.backend.cython._zmq, sentencepiece._sentencepiece, cuda_utils, msgspec._core, __triton_launcher, uvloop.loop (total: 158)
+[2026-04-29 13:17:50] Subprocess scheduler_0 (pid=2204749) crashed with exit code -6. Triggering SIGQUIT for cleanup...
+[2026-04-29 13:17:50] SIGQUIT received. signum=None, frame=None. It usually means one child failed.
